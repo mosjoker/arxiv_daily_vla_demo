@@ -1,0 +1,181 @@
+[
+    {
+        "title": "Do You Miss the Nights We Spent Crafting Figures? Rethinking Teaser and Framework Figures in the Age of Generative AI",
+        "summary": "Scientific figures give research ideas a visual form through choices of abstraction, composition, and emphasis. Generative AI offers new ways to realize these choices, raising questions about explanatory clarity and purposeful visual expression. We examine these questions through a visual retrospective of 371 motivation and framework figures from 200 papers. The corpus comprises a quota-based main sample of 160 papers spanning four temporal periods and a separate purposive style-contrast sample of 40 papers. A single multimodal judge evaluates six dimensions of communication and design, with three repeated judgments per figure. We attempt source-constrained revisions of all 371 figures, of which 369 pass the recorded fidelity checks. Original-figure ratings show no uniform decline across periods. Revisions increase mean clarity ratings by 0.428 points and decrease aesthetic coherence ratings by 0.111 points on a five-point scale. Gains in the six-dimension average are larger for main-sample motivation figures than for frameworks. Case analyses show that added explanation can clarify comparisons while leaving typographic hierarchy and visual economy unresolved. These model-based findings support researcher-led design, with AI assisting exploration and authors retaining responsibility for explanatory purpose, composition, and scientific relationships. The accompanying atlas and evaluation records are available at https://ntu-ai4x.github.io/Rethinking_Figures/index_en.html.",
+        "url": "http://arxiv.org/abs/2611.08486v1",
+        "published_date": "2026-11-05T18:59:33+00:00",
+        "updated_date": "2026-11-05T18:59:33+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Xiaoqi Zhao",
+            "Youwei Pang",
+            "Kailai Zhou"
+        ]
+    },
+    {
+        "title": "Where and Why is Grounded Reasoning Useful?",
+        "summary": "Grounded reasoning, where a model outputs text coordinates of relevant locations in chain-of-thought reasoning, is a common strategy for solving complex visual reasoning problems. However, the benefits and limitations of grounded reasoning are understudied. We study where and why grounded reasoning is most useful. To do so, we introduce a chain-of-thought analysis method to measure how much a model uses its outputted grounding in its thinking trace and perform a detailed ablation study of a grounded reasoning training recipe. We find that grounded reasoning improves counting but shows no significant gain over baselines without coordinate grounding across a wide range of spatial reasoning and perception benchmarks. Using several synthetic tasks, we show that grounded reasoning is most useful when a task requires undescribable references, which are visual concepts that are difficult to describe in language. However, we observe that many existing visual reasoning benchmarks are solvable with only describable text references. To close this gap, we introduce BrickVision, a new benchmark that requires undescribable visual references to solve.",
+        "url": "http://arxiv.org/abs/2611.08485v1",
+        "published_date": "2026-11-05T18:59:32+00:00",
+        "updated_date": "2026-11-05T18:59:32+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "David Yan",
+            "Le Xue",
+            "Forrest Huang",
+            "Qiuyi Zhang",
+            "Dustin Tran",
+            "Andrew M. Dai",
+            "Yinfei Yang"
+        ]
+    },
+    {
+        "title": "EgoGeneralist: Unifying Egocentric Action-Video Tasks through Video-Native Modeling",
+        "summary": "Modern video models possess strong visual priors, yet do not natively represent human action in metric 3D space. We present EgoGeneralist, which adapts pretrained video generators to unify action-conditioned egocentric video generation, pose estimation, and joint action-video generation. Our role-adaptive action renderer provides video-native representations for multidirectional action-video learning, making metric motion usable as both a spatial control signal and a recoverable generation target. Cross-stream action-video coupling establishes close correspondence between metric motion and visual dynamics through lightweight adaptation while preserving the pretrained visual prior. Together, these designs establish a generalist framework spanning five action-video tasks. Despite adaptation only on controlled laboratory recordings, EgoGeneralist generalizes to diverse unseen scenes and interactions with effective action control and visual quality, bridging pretrained visual knowledge and metric 3D human motion.",
+        "url": "http://arxiv.org/abs/2611.08477v1",
+        "published_date": "2026-11-05T18:58:13+00:00",
+        "updated_date": "2026-11-05T18:58:13+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Yanlin Jin",
+            "Bowen Yang",
+            "Cheng Zhang",
+            "Yifan Yang",
+            "Zhe Li",
+            "Jianfei Cai",
+            "Kai Zhu"
+        ]
+    },
+    {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "summary": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass. The layout adapts to the primitive's type, dimensionality, and length, supporting compact boxes and long, variable-length trajectories. Crucially, spatial accuracy need not require reproducing an autoregressive model's exact token sequence. VFlash therefore trains on annotated primitives and directly accepts structurally valid predictions without target-token agreement. Across the evaluated 2D and 3D robot trajectory tasks, VFlash consistently reduces prediction errors relative to autoregressive decoding. Preliminary single-rollout measurements indicate approximately 25x faster generation for 3D point motion forecasting. A world action model conditioned on VFlash plans achieves 70.2% average success across four MolmoSpaces task suites, compared with 62.6% for the baseline.",
+        "url": "http://arxiv.org/abs/2611.08449v1",
+        "published_date": "2026-11-05T18:44:43+00:00",
+        "updated_date": "2026-11-05T18:44:43+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV"
+        ],
+        "authors": [
+            "Yu-Cheng Chou",
+            "Shihao Wang",
+            "Jin Huang",
+            "Chi-Pin Huang",
+            "Chiao-An Yang",
+            "Xianzhe Fan",
+            "Jing Wang",
+            "Zhiqi Li",
+            "Yuanguo Kuang",
+            "Ruijie Zheng",
+            "Johan Bjorck",
+            "Sifei Liu",
+            "Hang Su",
+            "Abhishek Badki",
+            "Lei Zhang",
+            "Alan Yuille",
+            "Linxi \"Jim'' Fan",
+            "Jan Kautz",
+            "Zhiding Yu"
+        ]
+    },
+    {
+        "title": "Edge-Assisted Crowdsensing for Explainable Cyclist Safety Perception",
+        "summary": "Cyclist fatality rates remain high despite policy support for active travel, and autonomous vehicles add complexity to mixed traffic. Neither crash statistics nor multi-model detection pipelines scale to continuous monitoring of perceived safety along a route. We present an edge-assisted crowdsensing system: handlebar cameras supply street-level frames, a vision-language model (VLM) turns each frame into structured traffic attributes through a single prompt, and an explainable boosting machine (EBM) combines them with OpenStreetMap road infrastructure and on-bike kinematics to predict a crowdsourced 1-9 safety score. Extraction belongs at the network edge: the fastest self-hosted model needs 2.49 s per frame and scoring takes 0.4 ms on a CPU. On 1,362 annotated frames from two London routes, the EBM regressor reaches 72.2 percent binary accuracy and a mean absolute error of 1.011 under five-fold cross-validation. It is within one accuracy point of black-box ensembles. Its per-feature shape functions give exact attribution: physical lane separation is worth +0.97 rating points, a painted lane +0.70 and a construction site -0.65. Planners can therefore price an infrastructure change in rating points, and the results enter cost-benefit analysis directly. We also report inter-annotator agreement (alpha = 0.4695), an attribute audit, and a sensitivity analysis linking attribute error to accuracy. With re-encoding, a 20 s sampling interval serves 1,000 riders at 54 Mbit/s at a cost of 1.4 accuracy points, making continuous monitoring practical.",
+        "url": "http://arxiv.org/abs/2611.08441v1",
+        "published_date": "2026-11-05T18:33:58+00:00",
+        "updated_date": "2026-11-05T18:33:58+00:00",
+        "categories": [
+            "cs.CV",
+            "eess.IV"
+        ],
+        "authors": [
+            "Hongsen Cao",
+            "Chia-Yen Chiang",
+            "Mona Jaber",
+            "Meihui Wang",
+            "Yasmin Fathy"
+        ]
+    },
+    {
+        "title": "SM4RT: Cascaded Feed-forward Model for 4D Reconstruction",
+        "summary": "We introduce SM4RT, a multi-task cascade feed-forward model for dynamic scene reconstruction from RGB videos. While existing feed-forward approaches typically address geometry reconstruction and motion estimation separately--and often predict motions in a single coordinate frame that must account for camera movement--SM4RT solves these tasks sequentially by first reconstructing 3D geometry and then bootstrapping motion estimation from the predicted structure. By expressing each pixel's 3D motion in its corresponding camera frame, SM4RT reduces ambiguity arising from camera motion. To address the sparsity of real-world motion labels, SM4RT further incorporates a weakly supervised loss that regularizes unlabeled point motions using labeled point positions at the other time step. We evaluate motion estimation on three dynamic-scene datasets--Kubric, Waymo, and Point Odyssey--and SM4RT achieves the best performance on most metrics compared with prior baselines. We additionally benchmark geometry reconstruction on five dynamic scene datasets and show that SM4RT achieves competitive performance with state-of-the-art methods. Overall, our unified framework demonstrates that combining geometry reconstruction and motion estimation in a cascade not only avoids performance trade-offs but also enhances motion estimation through improved geometric reasoning.",
+        "url": "http://arxiv.org/abs/2611.08436v1",
+        "published_date": "2026-11-05T18:28:38+00:00",
+        "updated_date": "2026-11-05T18:28:38+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Pang-Chi Lo",
+            "Jhao-Syun Lai",
+            "Tsung-Wei Ke"
+        ]
+    },
+    {
+        "title": "T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models",
+        "summary": "Vision-Language-Action (VLA) models enable end-to-end robot control, but inference is increasingly expensive. Each decision processes hundreds of visual tokens, often across multiple cameras, leading to substantial computation while allowing irrelevant background content to distract action prediction under distribution shift. We argue that these issues stem from two complementary forms of redundancy: many visual tokens are spatially irrelevant, while attention over the remaining tokens is often misallocated. Based on this observation, we propose T3R, a Training-Free Two-Stage Token Refinement framework. In the first stage, segmentation-guided token pruning removes irrelevant visual patches to reduce computation and eliminate distracting context. In the second stage, saliency-guided attention biasing reallocates attention toward action-critical visual regions and language instructions within the retained tokens. Together, pruning produces a cleaner candidate set, while attention biasing further emphasizes the most decision-relevant evidence, yielding a better accuracy-efficiency frontier than either stage alone. On LIBERO-Spatial, T3R removes 85% of scene-camera visual tokens while essentially matching the unpruned success rate, and improves success by up to 7 percentage points under out-of-distribution object-placement perturbations. The timing comparison attributes 7.8 ms per inference call to pruning and attention-bias application. As input resolution increases, LLM-forward profiling shows up to a 3.3x speedup over the unpruned baseline. Evaluations across LIBERO, SIMPLER, and RoboTwin with three VLA backbones show the strongest accuracy-efficiency benefits in multi-camera settings. These results demonstrate that training-free token refinement is a practical approach to efficient and robust VLA inference.",
+        "url": "http://arxiv.org/abs/2611.08413v1",
+        "published_date": "2026-11-05T18:17:29+00:00",
+        "updated_date": "2026-11-05T18:17:29+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV"
+        ],
+        "authors": [
+            "Mohammed Hassan",
+            "Zhenyang Chen",
+            "Zheng Wang",
+            "Zhixin Zhu",
+            "Tianlong Chen",
+            " Yingyan",
+            " Lin",
+            "Chaojian Li"
+        ]
+    },
+    {
+        "title": "Social Humanoid: Socially Responsive Human-Humanoid Interaction",
+        "summary": "Humanoid robots are typically trained as solitary agents, leaving them unable to coordinate physically with human partners who naturally anticipate and adjust to one another. To bridge this gap, we present Social Humanoid, a hierarchical system that generates and executes socially responsive whole-body motion on a 29-DoF Unitree G1 conditioned on a human partner's motion. Its high-level policy performs flexible sequence modeling of human and humanoid motion through a shared tokenized representation, generating reactive humanoid motion and anticipating the partner's motion when they are occluded, while a low-level whole-body tracking controller executes the generated motion on the robot. To train the system, we introduce a two-phase adaptive retargeting procedure that retargets one interaction partner to the robot while morphing the other partner to preserve contact dynamics, reachability, and relative body scale. We apply this procedure across five motion-capture datasets to produce a new Human-Humanoid Interaction (HHI) benchmark of 260 hours of human-humanoid interactions. Our results demonstrate that Social Humanoid produces coordinated, human-aligned behavior across diverse interaction types in simulation and the real world. Project page: https://von31.github.io/social-humanoid/",
+        "url": "http://arxiv.org/abs/2611.08407v1",
+        "published_date": "2026-11-05T18:14:06+00:00",
+        "updated_date": "2026-11-05T18:14:06+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Vongani H. Maluleke",
+            "James Ni",
+            "Kie Horiuchi",
+            "Lea Wilken",
+            "Jiahui Lei",
+            "Evonne Ng",
+            "Roei Herzig",
+            "Jitendra Malik",
+            "Trevor Darrell",
+            "Angjoo Kanazawa"
+        ]
+    },
+    {
+        "title": "Adaptive Low-Light Enhancement for Road Anomaly Detection: A Multi-Architecture Benchmark and Edge Deployment Study",
+        "summary": "Road anomaly detection systems on autonomous vehicles must function reliably under degraded visual conditions including darkness, rain, and Harmattan dust haze. This paper benchmarks four object detection architectures, YOLOv8n, YOLOv12n, RT-DETR, and Faster R-CNN, under physically grounded lighting and weather degradation, and shows that uniform application of the SCI low-light enhancement network is actively harmful at dusk-level lighting (-16.1% to -30.7% mAP@50). We propose a lightweight, training-free luminance-adaptive router that selects between no enhancement, moderate SCI, and denoising plus strong SCI based on per-frame Rec. 601 luminance, recovering most of the dusk penalty while preserving low-light gains, and we validate the full pipeline on NVIDIA Jetson Nano edge hardware.",
+        "url": "http://arxiv.org/abs/2611.08393v1",
+        "published_date": "2026-11-05T18:06:59+00:00",
+        "updated_date": "2026-11-05T18:06:59+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Obed Honour Eje",
+            "Oluwatosin Kolade",
+            "Glory Bagai",
+            "Taliha Abiodun Folorunso"
+        ]
+    }
+]
