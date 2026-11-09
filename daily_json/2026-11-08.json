@@ -1,0 +1,209 @@
+[
+    {
+        "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation",
+        "summary": "Recent years have witnessed remarkable progress in video generation in terms of visual quality and temporal consistency. However, generating videos with precise spatial structure, coherent motion dynamics, and controllable scene composition remains challenging. In this paper, we introduce Video-Coder, the first attempt to train a code-driven video generation agent, which autonomously writes and executes code to construct a dynamic 3D scene (Draft Video) that provides structure and motion signals to downstream video generators. To support this paradigm, we design a dedicated data pipeline and curate two high-quality datasets, Video-Coder-SFT-6k and Video-Coder-RL-2k, which contain diverse prompts and ground-truth reference videos. We further develop the Video- Coder Harness, a unified interactive environment integrating code execution, 3D scene rendering, and execution feedback for agent training and inference. We then train Video-Coder with SFT fol- lowed by harness-native agentic reinforcement learning with dual reward feedback, which combines execution-based and video-based rewards. Additionally, we design an annealing training strategy that gradually reduces the execution reward over time, allowing the model to rely more on the video reward in the later training stages. Experiments show that Video-Coder achieves significant gains, improving Minimax-H3 by approximately 7 points on PhyGenBench and 24 points on VBench-2.0. We hope this work can serve as an open foundation for coding agents in video generation, and we fully open-source our data, models, and code",
+        "url": "http://arxiv.org/abs/2611.09894v1",
+        "published_date": "2026-11-06T18:59:57+00:00",
+        "updated_date": "2026-11-06T18:59:57+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Chaoyang Wang",
+            "Sicheng Gao",
+            "Junan Hu",
+            "Kunyang Li",
+            "Dongyang Chen",
+            "Yiyang Zhou",
+            "Huaxiu Yao",
+            "Yong Jae Lee",
+            "Radu Timofte",
+            "Yuzhang Shang"
+        ]
+    },
+    {
+        "title": "On Agentic Manipulation Policies",
+        "summary": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the RoboLab-120 and CaP-Gym benchmarks, with no demonstrations or task-specific training. On RoboLab-120, AMP1 reaches an 85.6\\% success rate zero-shot, compared to 49.2\\% and 42.9\\% for leading VLA and WAM policies. The agent succeeds zero-shot in 104 of 108 real-world trials spanning twelve tasks and three robot instances, reducing failure rates by 20x and 15x relative to strong VLA and WAM baselines. The basic harness supplies no grasping, pushing, or placing skills; the agent develops its own strategies, such as searching for hidden objects, using objects as tools, and calibrating its cameras. With the addition of a persistent memory store, the agent can also learn from experience: an augmented harness with a memory representation that is carried across episodes lowers the failure rate on RoboDojo bimanual manipulation tasks by 4.6x relative to zero-shot deployment. Our analysis suggests that AMPs are substantially more general and robust than specialist manipulation policies, providing a promising foundation for robot manipulation.",
+        "url": "http://arxiv.org/abs/2611.09892v1",
+        "published_date": "2026-11-06T18:59:34+00:00",
+        "updated_date": "2026-11-06T18:59:34+00:00",
+        "categories": [
+            "cs.RO",
+            "cs.AI",
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Chen Chen",
+            "Omid Bagherieh",
+            "Naveen Nikamanth Appiah Balaji",
+            "Jesse T. Gonzalez",
+            "Negin Heravi",
+            "Fahad Islam",
+            "Xueting Li",
+            "Jean-Baptiste Regli",
+            "Kejia Ren",
+            "Petr Švec",
+            "David J. Yoon",
+            "Matthias Müller",
+            "Vladlen Koltun"
+        ]
+    },
+    {
+        "title": "FlowMoP: Stochastic Multi-Person Motion Prediction",
+        "summary": "Predicting the future motion of multiple people is inherently stochastic: the same observed history admits many plausible continuations depending on intent, coordination, and social context. Yet the dominant paradigm in multi-person 3D motion prediction remains deterministic, with existing methods producing a fixed number of outputs per agent. In contrast, we present a conditional flow matching framework that jointly generates diverse future motions for multiple agents, modeling both global trajectories and root-relative poses. A B-spline reparameterization compresses the generative state space while enforcing temporal smoothness, and a dual-stream transformer conditions each agent's predictions on observed neighbor motion for interaction-aware forecasting. Our method achieves state-of-the-art performance on CMU-Mocap (UMPM) and 3DPW, outperforming deterministic baselines on joint position error, pose error, and final displacement error despite producing a full predictive distribution. We additionally establish the first motion prediction baseline on WorldPose, a large-scale professional soccer dataset, where social conditioning demonstrably concentrates predictive uncertainty along interaction-constrained directions.",
+        "url": "http://arxiv.org/abs/2611.09882v1",
+        "published_date": "2026-11-06T18:56:41+00:00",
+        "updated_date": "2026-11-06T18:56:41+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Aadya Agrawal",
+            "Ho Kei Cheng",
+            "Alexander Schwing"
+        ]
+    },
+    {
+        "title": "ZeoBench: A Benchmark for Self-Supervised Learning on 3D Zeolite Representations",
+        "summary": "Zeolites are an important class of porous crystalline materials with broad applications in gas storage, separations, and catalysis. Although hundreds of thousands of experimentally realized and hypothetical zeolite structures are known, identifying materials optimized for a target application remains challenging because property labels are expensive to obtain and available only for limited structure-molecule pairs. While prior work has demonstrated that 3D neural representations can predict zeolite properties effectively, it remains unclear which representation-learning strategies are most effective in the low-data regime relevant to materials discovery. We present ZeoBench, a benchmark for self-supervised learning on dense 3D representations of all-silica zeolites, and evaluate the resulting features on six existing downstream adsorption-property prediction tasks, across a range of training set sizes. Our study compares self-supervised 3D pretraining on volumetric zeolite data, adaptations of image-pretrained 2D ConvNets and vision transformers to 3D via multiview and channel-inflation strategies, and 3D ConvNets pretrained on out-of-domain volumetric datasets, alongside hand-crafted descriptors and supervised baselines. Using our pretraining and evaluation framework, we find self-supervised 3D representations outperform existing methods and achieve state-of-the-art performance across both in-domain label regimes and for the unseen domain of metal organic frameworks. Learned representations consistently outperform hand-crafted descriptors, and convolutional architectures are generally more effective than vision transformers in this setting. These results establish ZeoBench as a practical benchmark for 3D representation learning in zeolites and provide guidance for data-limited adsorption property prediction.",
+        "url": "http://arxiv.org/abs/2611.09880v1",
+        "published_date": "2026-11-06T18:55:34+00:00",
+        "updated_date": "2026-11-06T18:55:34+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Aaron Sun",
+            "Yachan Liu",
+            "Ping Yang",
+            "Peng Bai",
+            "Subhransu Maji"
+        ]
+    },
+    {
+        "title": "Graded convolutional networks: scale invariance without the scale and robustness to unknown blur",
+        "summary": "The Gaussian jet of an image is a graded vector space: a dilation by $λ$ multiplies derivatives of order $k$ by $λ^{-k}$. Local graded convolutions are exactly homogeneous differential operators, and a local feature is dilation-invariant if and only if it factors through the scale-normalized jet or, without the scale, through the retraction onto the weighted sphere of the grading. Under unknown Gaussian blur the retraction changes only by a change of scale, whereas the scale-normalized jet acquires a grading factor that no radial normalization removes. At the zero jet the retraction separates image families that radial normalizations and continuous classifiers cannot. Networks built on the retraction are universal for invariant features. On MNIST such a network keeps 88.4% accuracy under a two-pixel blur, against 66.2% for the same network on scale-normalized derivatives; in Lindeberg's Gaussian derivative network the retraction raises accuracy at that blur from 91.5% to 95.1%.",
+        "url": "http://arxiv.org/abs/2611.09878v1",
+        "published_date": "2026-11-06T18:54:03+00:00",
+        "updated_date": "2026-11-06T18:54:03+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Tanush Shaska"
+        ]
+    },
+    {
+        "title": "GRAC: Graph-Based Retrieval-Augmented Captioning for Surgical Scene Description",
+        "summary": "Purpose: Surgical operative reports support procedural documentation, surgical training, performance assessment, and workflow review. However, extracting meaningful information often requires extensive manual review and clinical expertise. Automated surgical scene descriptions could reduce this burden by leveraging recurring surgical activities and prior knowledge.\n  Methods: We propose GRAC (Graph-Based Retrieval-Augmented Captioning), a framework that represents surgical scenes as graphs capturing relationships among instruments, actions, and anatomical structures. Given an input scene graph, GRAC learns to retrieve relevant graph-caption pairs from training data. It compares instrument-tissue interactions between retrieved examples and the input scene, using comparison features to condition retrieved-caption representations during generation.\n  Results: On the EndoVis-18 benchmark, GRAC achieved a CIDEr-D of 5.88, compared with 4.23 for SGT and 3.36 for the strongest conventional Transformer baseline. Exact instrument-action-target triplet-set accuracy reached 52.6%, compared with 32.7% for SGT and 26.2% for the strongest conventional baseline. These results demonstrate improvements in language quality and factual agreement. On TORS, GRAC achieved a CIDEr-D of 5.06, compared with 3.80 for the strongest baseline.\n  Conclusion: GRAC demonstrates that combining structured surgical scene representations with retrieved examples improves surgical scene captioning and produces more contextually meaningful descriptions.",
+        "url": "http://arxiv.org/abs/2611.09866v1",
+        "published_date": "2026-11-06T18:47:23+00:00",
+        "updated_date": "2026-11-06T18:47:23+00:00",
+        "categories": [
+            "cs.CV",
+            "cs.AI"
+        ],
+        "authors": [
+            "Rochak Dhakal",
+            "Chen Zhao",
+            "Soup Cobb",
+            "Xin Qian",
+            "Xiaofeng Yang",
+            "Weihua Zhou"
+        ]
+    },
+    {
+        "title": "Flow-Guided Target-Space Alignment via Path Consistency",
+        "summary": "Many multimodal alignment problems require mapping a source modality into a fixed space defined by a target modality, where the target space is not merely an intermediate embedding but is used directly for downstream analysis. In this setting, successful alignment should preserve both the global structure of the target distribution and the instance-level correspondence observed in paired source--target training data. Existing objectives typically address only part of this goal: contrastive losses encourage relative similarity, distribution-matching losses improve marginal agreement, and pointwise regression fits each source sample to its paired target without explicitly modeling target-space path geometry. We propose FlowAlign, a flow-guided target-space alignment method that repurposes conditional flow matching as a training-time alignment signal rather than an inference-time transport model. FlowAlign uses the learned flow field to guide the alignment of source-side representations with the fixed target space, encouraging them to preserve paired correspondence while remaining compatible with the global target-space structure. We further provide theoretical analysis showing how FlowAlign helps improve paired correspondence by controlling endpoint accuracy and capturing local target-space geometry. Experiments on synthetic data, paired single-cell multiome benchmarks, and image--text alignment demonstrate that FlowAlign improves instance level correspondence while preserving target-space structure across different modality settings.",
+        "url": "http://arxiv.org/abs/2611.09863v1",
+        "published_date": "2026-11-06T18:44:08+00:00",
+        "updated_date": "2026-11-06T18:44:08+00:00",
+        "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.LG"
+        ],
+        "authors": [
+            "Ruizhi Yuan",
+            "Zeqiu Yu",
+            "Wei Gao",
+            "Wei Chen",
+            "Xiwei Tang",
+            "Lu Tang"
+        ]
+    },
+    {
+        "title": "Super-resolved digital terrain models for GEDI geolocation correction: agreement with airborne LiDAR DTM-based corrections at the beam level, not the footprint level",
+        "summary": "The Global Ecosystem Dynamics Investigation (GEDI) mission measures three-dimensional forest structure with a LiDAR aboard the International Space Station. GEDI observations have geolocation errors of about 10 m, which cause misalignment with other remote sensing data and reduce the accuracy of downstream tasks. Matching GEDI ground elevations against high-resolution digital terrain models (DTMs) from airborne LiDAR is one way to correct these errors, but such DTMs exist in few regions. To widen this method's applicability, we super-resolved a more widely available low-resolution DTM and used it for the matching. Our question is whether a super-resolved DTM yields the same correction as a 1 m-resolution airborne LiDAR DTM and, if not, why. In steep forests of western Japan, we super-resolved an existing 10 m-resolution DTM to 1 m. Improving its accuracy required fusion with a global 30 m-resolution DTM from a different source. Using the resulting DTM, we corrected GEDI observation positions first by a single shift per ground track, then per observation. For most tracks, the shifts nearly matched those from the airborne LiDAR DTM, likely because DTM errors canceled out across many observations. Per-observation corrections, however, did not match. At a single observation, the error does not cancel out and is too large for the correction. This error likely originates mainly from the input DTM. Therefore, even without a 1 m-resolution DTM, a roughly 10 m-resolution DTM, fused with a global DTM and super-resolved to 1 m, should yield track-wise corrections nearly matching those from a 1 m-resolution DTM.",
+        "url": "http://arxiv.org/abs/2611.09854v1",
+        "published_date": "2026-11-06T18:36:50+00:00",
+        "updated_date": "2026-11-06T18:36:50+00:00",
+        "categories": [
+            "eess.IV",
+            "cs.CV",
+            "physics.geo-ph"
+        ],
+        "authors": [
+            "Natsuki Yuda",
+            "Shinichiro Shirota"
+        ]
+    },
+    {
+        "title": "Health-System-Wide Mapping of Demographic Information in Routine Clinical Histopathology",
+        "summary": "The extent to which demographic-associated information is detectable across organs and disease states in routine clinical histopathology remains unclear. Here, we analyzed 1.3 million hematoxylin and eosin whole-slide images from 257,322 patients across 25 organs, using pathology foundation-model representations and multiple-instance learning to systematically map information associated with sex, age group, and self-reported race. Across 69 organ-demographic combinations, demographic attributes were broadly recoverable, with pan-organ mean AUROCs of 0.828 for sex, 0.733 for age group, and 0.662 for self-reported race, and substantial variation across organs. Demographic-class balancing produced relatively small changes in performance, while evaluation within diagnosis-text clusters showed modest attenuation. Under training with diagnosis-based grouping, demographic-associated signals remained detectable across multiple organs, including sex in gastric tissue (AUROC 0.865), age group in breast (0.816), and self-reported race in skin (0.728). Literature-guided analysis of these settings generated candidate histomorphological and contextual explanations for further investigation. Together, these findings provide a systematic map of demographic-associated information in routine histopathology, informing investigations of its sources, assessments of potential shortcut learning, and the development of more interpretable computational pathology models.",
+        "url": "http://arxiv.org/abs/2611.09851v1",
+        "published_date": "2026-11-06T18:34:51+00:00",
+        "updated_date": "2026-11-06T18:34:51+00:00",
+        "categories": [
+            "cs.CV",
+            "q-bio.QM"
+        ],
+        "authors": [
+            "Shengjia Chen",
+            "Ruchika Verma",
+            "Kevin Clare",
+            "Paula Restrepo",
+            "Jannes Jegminat",
+            "Eugenia Alleva",
+            "Kuan-lin Huang",
+            "Aryeh Stock",
+            "Brandon Veremis",
+            "Thomas Fuchs",
+            "Gabriele Campanella"
+        ]
+    },
+    {
+        "title": "AdaptivePnP: Fast Auto-Tuned Plug-and-Play for Deconvolution",
+        "summary": "Plug-and-play (PnP) methods reconstruct images by alternating a data-fitting step with an image denoiser. Their performance depends on two parameters: the step size $γ$ and the measurement noise level $σ$. In practice, $γ$ is often tuned by grid search over validation images and must be retuned whenever the problem setting changes, and $σ$ is assumed known or estimated separately. We propose AdaptivePnP, a PnP framework that jointly estimates $σ$ and $γ$ at every iteration from the data-fitting residual. To do so, we apply the PnP virtual model to the data-fitting proximal map and show that the residual is zero-mean Gaussian with covariance parameterized by $γ$ and $σ$. However, when one parameter is much larger than the other, the residual carries little information about the smaller one and using the maximum likelihood (ML) estimator can degrade the PnP iterations. We therefore introduce the identifiable maximum likelihood (IML) estimator, which restricts the ML estimator to an identifiable window in which the normalized Cramér--Rao bound of every parameter is bounded by a user-specified tolerance. For the virtual model, this window is an interval of ratios $ρ= γ/σ$, so computing the IML estimate reduces to a one-dimensional search over $ρ$. We apply AdaptivePnP to two standard PnP methods, yielding algorithms that require neither a tuned $γ$ nor a known $σ$. On image deblurring and super-resolution, AdaptivePnP matches or outperforms PnP baselines tuned with the true $σ$. Code is available at https://github.com/hdubasullivan/AdaptivePnP.",
+        "url": "http://arxiv.org/abs/2611.09845v1",
+        "published_date": "2026-11-06T18:29:09+00:00",
+        "updated_date": "2026-11-06T18:29:09+00:00",
+        "categories": [
+            "eess.IV",
+            "cs.CV"
+        ],
+        "authors": [
+            "Haley Duba-Sullivan",
+            "Emma J. Reid",
+            "Charles A. Bouman",
+            "Gregery T. Buzzard"
+        ]
+    },
+    {
+        "title": "BEV3SR: Evidence-Aware 3D Spatial Reasoning from Video",
+        "summary": "3D spatial reasoning from video remains challenging for VLMs because videos provide sequential, view-local observations rather than persistent metric scene records. Many questions must be answered in a query-specified perspective rather than the observed camera viewpoint, and prompting with a fixed set of RGB views may miss sparse or occluded visual cues. To address these gaps, we introduce BEV3SR, a training-free and backbone-agnostic framework for RGB-D videos with camera parameters. BEV3SR turns video observations into queryable metric bird's-eye-view (BEV) scene memory and formalizes each query into an evidence-aware spatial task. The Spatial Task Formalizer specifies the query's reference frame, spatial constraints, objective, and evidence requirement. The evidence requirement determines the appropriate reasoning pathway. A query treated as requiring geometric evidence is handled by the Geometric Reasoner, which deterministically computes the answer using the metric BEV records in the query-specified reference frame. Otherwise, a query treated as requiring visual evidence is passed to the Visual Evidence Aligner, which uses BEV-indexed object records and their associated supporting views to retrieve object-consistent and scene-context RGB frames for VLM grounding. Within a standard 16-frame budget, BEV3SR consistently improves different VLM backbones across multiple 3D scene QA benchmarks, delivering large gains on spatially intensive questions and significant improvements on open-ended scene QA. These results demonstrate that BEV3SR offers an effective, efficient, and interpretable framework for explicit 3D spatial reasoning from video.",
+        "url": "http://arxiv.org/abs/2611.09816v1",
+        "published_date": "2026-11-06T18:02:49+00:00",
+        "updated_date": "2026-11-06T18:02:49+00:00",
+        "categories": [
+            "cs.CV"
+        ],
+        "authors": [
+            "Fan Zhu",
+            "Rui Yu"
+        ]
+    }
+]
